@@ -11,8 +11,8 @@ const productSlice = createSlice({
     name: 'Products',
     initialState:{
         Veg:[
-            {name:'Fresh Tomato', price:50.5, image:'public/Images/VegTomato.png'},
-            {name:'Potato', price:60.5, image:'public/Images/VegPotato.png'},
+            {name:'Fresh Tomato', price:50.5, image:'/Images/VegTomato.png'},
+            {name:'Potato', price:60.5, image:'/Images/VegPotato.png'},
             {name:'Pumpkin', price:100.5, image:'public/Images/VegPumpkin.png'},
             {name:'Onion', price:55.5, image:'public/Images/VegOnion.png'},
             {name:'Lime', price:10.5, image:'public/Images/VegLime.png'},
