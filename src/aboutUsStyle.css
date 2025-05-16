@@ -1,7 +1,9 @@
+/* aboutUsStyle.css */
+
 .aboutus-container {
-  max-width: 1100px;
-  margin: 60px auto;
-  padding: 30px;
+  max-width: 1200px;
+  margin: 100px auto 40px auto; /* Push down below navbar */
+  padding: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
 }
@@ -9,22 +11,24 @@
 .aboutus-container h1 {
   font-size: 2.5rem;
   margin-bottom: 40px;
-  color: #2c3e50;
+  color: #333;
 }
 
 .aboutus-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
+  gap: 30px;
+  padding: 0 20px;
 }
 
 .aboutus-card {
-  background-color: #f9f9f9;
+  background-color: #fff;
   border-radius: 15px;
   padding: 25px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   text-align: left;
-  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-left: 6px solid transparent;
+  transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
 .aboutus-card:hover {
@@ -32,44 +36,34 @@
 }
 
 .aboutus-card h2 {
-  font-size: 1.3rem;
-  margin-bottom: 15px;
-  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #222;
 }
 
 .aboutus-card p,
 .aboutus-card ul {
-  font-size: 1rem;
   color: #555;
   line-height: 1.6;
+  font-size: 1rem;
 }
 
 .aboutus-card ul {
   padding-left: 20px;
 }
 
-.mission {
-  border-left: 5px solid #f9a825;
-}
-.vision {
-  border-left: 5px solid #00acc1;
-}
-.market {
-  border-left: 5px solid #ef5350;
-}
-.values {
-  border-left: 5px solid #8e24aa;
-}
-.history {
-  border-left: 5px solid #43a047;
+.aboutus-card.orange {
+  border-left-color: #f4a100;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
-  .aboutus-container h1 {
-    font-size: 2rem;
-  }
-  .aboutus-card {
-    padding: 20px;
-  }
+.aboutus-card.teal {
+  border-left-color: #00b4d8;
+}
+
+.aboutus-card.purple {
+  border-left-color: #9b5de5;
+}
+
+.aboutus-card.green {
+  border-left-color: #06d6a0;
 }
