@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import './milkStyle.css';
 import { AddToCart } from './store';
 
-function Milk() {
+function milk() {
   const dispatch = useDispatch();
 
   // Fetch milk products from the Redux store
@@ -111,4 +111,4 @@ function Milk() {
   );
 }
 
-export default Milk;
+export default milk;
