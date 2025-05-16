@@ -5,7 +5,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './vegStyle.css';
 
-function Veg() {
+function veg() {
   const dispatch = useDispatch();
 
   // Get veg products from Redux store
@@ -139,4 +139,4 @@ function Veg() {
   );
 }
 
-export default Veg;
+export default veg;
