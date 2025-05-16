@@ -1,0 +1,170 @@
+/* Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Main Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0d1b2a;
+  z-index: 1000;
+  padding: 10px 20px;
+  height: 80px; /* Set this only if you want consistent layout */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Left Section - Logo, Brand and Search */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.navbar-logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.brand-name {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  white-space: nowrap;
+}
+
+/* Search inside left section */
+.navbar-search {
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+}
+
+.search-bar {
+  width: 200px;
+  padding: 8px;
+  border-radius: 4px 0 0 4px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.search-button {
+  padding: 8px 12px;
+  background-color: #febd69;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+/* Remove old center logic */
+.navbar-center {
+  display: none;
+}
+
+/* Right Section - Navigation Links */
+.navbar-right {
+ position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+
+.nav-item {
+  color: white;
+  text-decoration: none;
+  font-weight: 50;
+  white-space: nowrap;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+}
+
+/* Sub Navbar */
+.sub-navbar {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  background-color: #1b263b;
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.sub-navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 50;
+}
+
+.sub-navbar a:hover {
+  color: #febd69;
+}
+
+/* Page Content */
+.page-content {
+  padding: 20px;
+  background-color: #f4f4f4;
+  min-height: 10vh;
+  padding-top: 0; /* Add top padding to avoid overlap with fixed navbar */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .navbar-left {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .navbar-search {
+    width: 100%;
+  }
+
+  .search-bar {
+    width: 100%;
+  }
+
+  .navbar-right {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .sub-navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.center-page {
+  max-width: 60px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

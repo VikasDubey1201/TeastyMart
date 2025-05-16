@@ -1,0 +1,25 @@
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 200px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+div {
+  margin-bottom: 15px;
+}

@@ -1,0 +1,255 @@
+/* Cart container */
+.cart-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 800px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Table layout */
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.cart-table th,
+.cart-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.cart-table th {
+  background-color: #f0f0f0;
+}
+
+.cart-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Quantity and action buttons */
+.inc-btn,
+.dec-btn,
+.remove-btn {
+  background-color: #e0e0e0;
+  border: none;
+  margin: 0 5px;
+  padding: 6px 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.remove-btn {
+  background-color: #ff5c5c;
+  color: white;
+}
+
+.inc-btn:hover,
+.dec-btn:hover,
+.remove-btn:hover {
+  opacity: 0.85;
+}
+
+/* Cart summary section */
+.cart-summary {
+  border-top: 2px solid #eee;
+  padding-top: 20px;
+  margin-top: 30px;
+}
+
+.summary-line,
+.coupon-line {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  font-size: 16px;
+}
+
+.total-line {
+  font-weight: bold;
+  border-top: 1px solid #ccc;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+/* Discount and coupon buttons */
+.button-group {
+  margin: 10px 0;
+}
+
+.button-group button {
+  margin-right: 10px;
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-group button:hover {
+  background-color: #0074cc;
+}
+
+.coupon-line input {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.coupon-line button {
+  margin-left: 10px;
+  background-color: #32cd32;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Email section */
+.email-section input {
+  margin-top: 10px;
+  padding: 8px;
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+.email-section label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Payment sections */
+.payment-section-center {
+  margin-top: 20px;
+}
+
+.qr-section,
+.card-payment {
+  margin: 20px auto;
+  padding: 20px;
+  background: #fdfdfd;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card-payment input {
+  display: block;
+  margin: 10px auto;
+  padding: 8px;
+  width: 80%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Complete purchase button */
+.complete-purchase-btn {
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  padding: 10px 30px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.complete-purchase-btn:hover {
+  background-color: #218838;
+}
+
+/* Thank you message */
+.thank-you-banner {
+  background: #e6ffe6;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.thank-you-animation {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Firework animation */
+.firework {
+  position: fixed;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  background-color: #ff4081;
+  border-radius: 50%;
+  animation: explode 0.7s ease-out forwards;
+}
+
+@keyframes explode {
+  0% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3) translateY(-100px);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Empty cart styling */
+.empty-cart-section {
+  text-align: center;
+  padding: 40px;
+}
+
+.empty-cart-image {
+  max-width: 250px;
+}
+
+.empty-cart {
+  font-size: 20px;
+  margin-top: 20px;
+  color: #999;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .cart-table th, .cart-table td {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .coupon-line,
+  .summary-line {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .coupon-line input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .email-section input {
+    width: 100%;
+  }
+
+  .qr-section,
+  .card-payment {
+    width: 90%;
+  }
+}

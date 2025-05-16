@@ -1,0 +1,189 @@
+/* === Wrapper: holds filters + products === */
+.veg-wrapper {
+  display: flex;
+  gap: 30px;
+  padding: 100px;
+  background-color: #fffaf5;
+  padding-top: 500px; /* Push below navbar */
+  width: 100vw;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* === Filter Sidebar === */
+.veg-container {
+  width: 260px;
+  position: sticky;
+  top: 20px;
+  background-color: #e8f5e9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.veg-container h2 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #2e7d32;
+  border-bottom: 2px solid #a5d6a7;
+  padding-bottom: 8px;
+}
+
+.veg-container label {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: #333;
+  cursor: pointer;
+}
+
+.veg-container input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.veg-container button {
+  margin-top: 15px;
+  background-color: #2e7d32;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.veg-container button:hover {
+  background-color: #27642b;
+}
+
+/* === Product Section === */
+.veg-products {
+  flex: 1;
+}
+
+.veg-products h1 {
+  text-align: center;
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+/* Product Grid */
+.veg-products ol {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 25px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* === Product Card === */
+.veg-Cart {
+  background-color: #afefac;
+  border: 1px solid #8ce5b0;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.veg-Cart:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* === Product Image === */
+.veg-Cart img {
+  width: 100%;
+  height: 180px; /* Uniform image height */
+  object-fit: fill; /* Maintain image aspect ratio */
+  border-radius: 8px;
+  transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
+}
+
+.veg-Cart:hover img {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+  box-shadow: 0 0 12px rgba(46, 125, 50, 0.4);
+}
+
+/* === Product Text === */
+.veg-Cart h3 {
+  margin: 12px 0 6px;
+  font-size: 16px;
+  color: #2e7d32;
+}
+
+.veg-Cart p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* === Add to Cart Button === */
+.veg-Cart button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.veg-Cart button:hover {
+  background-color: #27642b;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .veg-wrapper {
+    flex-direction: column;
+  }
+
+  .veg-container {
+    position: static;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .veg-products ol {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
+}
+
+/* === Pagination Styles === */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 0.8rem;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 8px 12px;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #27642b;
+}
+
+.pagination button:disabled {
+  background-color: #71f177;
+  cursor: not-allowed;
+}
+
+.pagination button.active {
+  background-color: #004d24;
+}

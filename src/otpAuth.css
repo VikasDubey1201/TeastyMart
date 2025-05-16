@@ -1,0 +1,30 @@
+.otp-auth-box {
+  padding: 16px;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+  background: #f9f9f9;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.otp-auth-box input {
+  margin: 6px 0;
+  padding: 10px;
+  width: 90%;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+.otp-auth-box button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: skyblue;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+}

@@ -1,0 +1,91 @@
+/* Fullscreen layout */
+.home-container {
+  width: 140%;
+  height: 100vh;
+  overflow: hidden;
+  padding-top: 180px; /* leave space below navbar (adjust if your navbar height is different) */
+  max-width: 1500px;  /* smaller width to avoid stretching */
+  margin: 0 auto;    /* center horizontally */
+  font-size: 14px;   /* smaller base font size */
+  line-height: 1.4;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+}
+
+/* Background Slideshow */
+.home-hero {
+   height: 300px;  /* smaller height */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Dark overlay for text contrast */
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.55);
+  height: 100%;
+  width: 100%;
+  padding: 3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Title */
+.home-title {
+  color: #e6d511;
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Subtitle */
+.home-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Category Buttons */
+.home-buttons button {
+  background-color: #ffb703;
+  color: #000;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.home-buttons button:hover {
+  background-color: #fb8500;
+  transform: scale(1.05);
+}
+
+/* Why Choose Us Section */
+.home-info-section {
+  background-color: #fefae0;
+  color: #d6ee1d;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+.home-info-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.home-info-section p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+/* Footer */
+.home-footer {
+  background-color: #264653;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 1.1rem;
+}

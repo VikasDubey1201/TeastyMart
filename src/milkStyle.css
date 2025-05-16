@@ -1,0 +1,190 @@
+/* === Wrapper: holds filters + products === */
+.milk-wrapper {
+  display: flex;
+  gap: 30px;
+  padding: 100px;
+  padding-top: 500px; /* ✅ Push below navbar */
+  background-color: #fffaf5;
+  width: 100vw;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* === Filter Sidebar === */
+.milk-container {
+  width: 260px;
+  position: sticky;
+  top: 20px;
+  background-color: #e3f2fd;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.milk-container h2 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #1565c0;
+  border-bottom: 2px solid #90caf9;
+  padding-bottom: 8px;
+}
+
+.milk-container label {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: #333;
+  cursor: pointer;
+}
+
+.milk-container input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.milk-container button {
+  margin-top: 15px;
+  background-color: #1565c0;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.milk-container button:hover {
+  background-color: #0d47a1;
+}
+
+/* === Product Section === */
+.milk-products {
+  flex: 1;
+}
+
+.milk-products h1 {
+  text-align: center;
+  color: #1565c0;
+  margin-bottom: 20px;
+}
+
+/* Product Grid */
+.milk-products ol {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 25px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* === Product Card === */
+.milk-Cart {
+  background-color: #b2ebf2;
+  border: 1px solid #4dd0e1;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.milk-Cart:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* === Product Image === */
+.milk-Cart img {
+  width: 100%;
+  height: 180px;
+  object-fit: fill;
+  border-radius: 8px;
+  transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
+}
+
+.milk-Cart:hover img {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+  box-shadow: 0 0 12px rgba(21, 101, 192, 0.4);
+}
+
+/* === Product Text === */
+.milk-Cart h3 {
+  margin: 12px 0 6px;
+  font-size: 16px;
+  color: #1565c0;
+}
+
+.milk-Cart p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* === Add to Cart Button === */
+.milk-Cart button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #1565c0;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.milk-Cart button:hover {
+  background-color: #0d47a1;
+}
+
+/* === Pagination Styles === */
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 0.8rem;
+}
+
+.pagination-controls button {
+  margin: 0 5px;
+  padding: 8px 12px;
+  background-color: #90caf9;
+  color: #0d47a1;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pagination-controls button:hover:not(:disabled) {
+  background-color: #64b5f6;
+}
+
+.pagination-controls button:disabled {
+  background-color: #dbeeff;
+  cursor: not-allowed;
+}
+
+.pagination-controls .active-page {
+  background-color: #1565c0;
+  color: white;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .milk-wrapper {
+    flex-direction: column;
+  }
+
+  .milk-container {
+    position: static;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .milk-products ol {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
+}

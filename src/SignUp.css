@@ -1,0 +1,123 @@
+.signup-container {
+  display: flex;
+  max-width: 900px;
+  height: auto;
+  margin: 50px auto;
+  padding-top: 200px;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+}
+
+.signup-left {
+  flex: 1;
+  background-color: #000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+}
+
+.signup-left h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.signup-left p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.signup-right {
+  flex: 1;
+  padding: 40px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.signup-form h2 {
+  font-size: 26px;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #1a1a1a;
+}
+
+.signup-form input,
+.signup-form select {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 12px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border 0.3s;
+}
+
+.signup-form input:focus,
+.signup-form select:focus {
+  border-color: #333;
+  outline: none;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  gap: 20px;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 15px;
+  color: #444;
+}
+
+.select-group {
+  margin: 15px 0;
+}
+
+.signup-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.signup-form button:hover {
+  background-color: #333;
+}
+
+.signup-right p {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.signup-right a {
+  color: purple;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: -6px;
+  margin-bottom: 10px;
+  display: block;
+}
