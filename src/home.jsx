@@ -58,15 +58,17 @@ function Home() {
 
       <div className="home-info-section">
         <h2>Why Choose Us?</h2>
-        <p>🌱 Fresh and organic products delivered daily</p>
-        <p>📦 Hassle-free delivery across your city</p>
-        <p>💸 Affordable prices and exclusive deals</p>
-        <p>❤️ Trusted by 10,000+ happy customers</p>
+        <div className="info-cards">
+          <div className="info-card">🌱 Fresh and organic products delivered daily</div>
+          <div className="info-card">📦 Hassle-free delivery across your city</div>
+          <div className="info-card">💸 Affordable prices and exclusive deals</div>
+          <div className="info-card">❤️ Trusted by 10,000+ happy customers</div>
+        </div>
       </div>
 
       <div className="home-footer">
         <AboutUs />
-        <p>--- You've reached the end of the menu ---</p>
+        <p className="footer-text">--- You've reached the end of the menu ---</p>
       </div>
     </div>
   );
