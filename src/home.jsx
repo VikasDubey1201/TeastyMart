@@ -37,20 +37,20 @@ function Home() {
           </p>
           <div className="home-buttons">
             <button onClick={() => navigate('/veg')}>
-              🍅 Veg Items
-              <p>Eat Healthy, Live Happy!</p>
+              <span>🍅 Veg Items</span>
+              <small>Eat Healthy, Live Happy!</small>
             </button>
             <button onClick={() => navigate('/NonVeg')}>
-              🍗 Non-Veg Items
-              <p>Your Daily Dose of Delicious Protein.</p>
+              <span>🍗 Non-Veg Items</span>
+              <small>Your Daily Dose of Delicious Protein.</small>
             </button>
             <button onClick={() => navigate('/milk')}>
-              🥛 Milk
-              <p>The Milky Way to Your Day!</p>
+              <span>🥛 Milk</span>
+              <small>The Milky Way to Your Day!</small>
             </button>
             <button onClick={() => navigate('/chocolate')}>
-              🍫 Chocolate
-              <p>Simply Irresistible Chocolate.</p>
+              <span>🍫 Chocolate</span>
+              <small>Simply Irresistible Chocolate.</small>
             </button>
           </div>
         </div>
